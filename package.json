@@ -1,0 +1,14 @@
+{
+  "name": "morning-dew-cafe",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve . -l 3000",
+    "build": "mkdir -p dist && cp *.html dist/",
+    "start": "npx serve dist -l 3000"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

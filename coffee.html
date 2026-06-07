@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ardent Signature Reserve - Morning Dew Cafe</title>
+<!-- Google Fonts: Hanken Grotesk & EB Garamond -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Design System -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline": "#80756c",
+                        "inverse-primary": "#e1c1a4",
+                        "surface-container": "#efefd7",
+                        "surface-container-low": "#f5f5dc",
+                        "on-tertiary-container": "#bda079",
+                        "on-primary-fixed": "#291806",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#e1c1a4",
+                        "surface-dim": "#dbdcc3",
+                        "secondary-container": "#fddab2",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#feddb3",
+                        "on-secondary-container": "#785e3e",
+                        "background": "#fbfbe2",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#725a42",
+                        "on-secondary-fixed": "#291801",
+                        "outline-variant": "#d2c4ba",
+                        "on-tertiary-fixed": "#281801",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#ffddb6",
+                        "surface-container-high": "#eaead1",
+                        "tertiary-fixed-dim": "#e1c299",
+                        "inverse-surface": "#303221",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e4e4cc",
+                        "secondary": "#735a3a",
+                        "inverse-on-surface": "#f2f2d9",
+                        "on-background": "#1b1d0e",
+                        "tertiary-container": "#4b3719",
+                        "on-secondary-fixed-variant": "#594325",
+                        "on-surface": "#1b1d0e",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#fbfbe2",
+                        "tertiary": "#332206",
+                        "on-primary-container": "#bd9f83",
+                        "on-tertiary-fixed-variant": "#584324",
+                        "on-primary-fixed-variant": "#59422c",
+                        "on-surface-variant": "#4e453d",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e4e4cc",
+                        "surface-bright": "#fbfbe2",
+                        "secondary-fixed-dim": "#e2c19b",
+                        "primary-container": "#4b3621",
+                        "primary-fixed": "#fedcbe",
+                        "primary": "#33210d"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "section-gap": "120px",
+                        "gutter": "24px",
+                        "container-max": "1200px"
+                    },
+                    fontFamily: {
+                        "headline-md": ["EB Garamond"],
+                        "display-lg": ["EB Garamond"],
+                        "label-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "caption": ["Hanken Grotesk"],
+                        "headline-sm": ["EB Garamond"],
+                        "display-lg-mobile": ["EB Garamond"],
+                        "body-md": ["Hanken Grotesk"]
+                    },
+                    fontSize: {
+                        "headline-md": ["32px", { lineHeight: "40px", fontWeight: "500" }],
+                        "display-lg": ["64px", { lineHeight: "72px", letterSpacing: "-0.02em", fontWeight: "500" }],
+                        "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "600" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "caption": ["12px", { lineHeight: "16px", fontWeight: "400" }],
+                        "headline-sm": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                        "display-lg-mobile": ["40px", { lineHeight: "48px", letterSpacing: "-0.01em", fontWeight: "500" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md bg-surface dark:bg-surface-dim shadow-sm">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+<!-- Brand -->
+<a class="flex items-center gap-2 text-primary dark:text-primary-fixed" href="index.html">
+    <span class="material-symbols-outlined text-[24px]">eco</span>
+    <span class="font-headline-sm italic tracking-tight">Ardent Hearth</span>
+</a>
+<!-- Navigation Links (Desktop) -->
+<ul class="hidden md:flex items-center gap-8">
+<li>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary pb-1 cursor-pointer active:scale-95 transition-transform hover:text-secondary-fixed-dim transition-all duration-200" href="#">Menu</a>
+</li>
+<li>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer active:scale-95 transition-transform hover:text-secondary-fixed-dim transition-all duration-200" href="#">Location</a>
+</li>
+<li>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer active:scale-95 transition-transform hover:text-secondary-fixed-dim transition-all duration-200" href="#">About</a>
+</li>
+</ul>
+<!-- Actions -->
+<div class="flex items-center gap-4">
+<button class="hidden md:inline-flex bg-primary text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full hover:bg-primary/90 transition-colors cursor-pointer active:scale-95">
+                    Order Now
+                </button>
+<!-- Mobile Menu Icon (Visual Only) -->
+<button class="md:hidden text-primary cursor-pointer active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[100px] pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Breadcrumb -->
+<nav class="mb-8 hidden md:block">
+<ol class="flex items-center gap-2 font-caption text-caption text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li>
+<li><span class="material-symbols-outlined text-[14px]">chevron_right</span></li>
+<li><span class="hover:text-primary transition-colors cursor-pointer">Menu</span></li>
+<li><span class="material-symbols-outlined text-[14px]">chevron_right</span></li>
+<li class="text-primary font-medium">Ardent Signature Reserve</li>
+</ol>
+</nav>
+<!-- Product Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-16 items-start mb-section-gap">
+<!-- Product Image -->
+<div class="lg:col-span-7 w-full sticky top-32">
+<div class="rounded-xl overflow-hidden bg-surface-container-low aspect-square relative shadow-sm border border-outline-variant/30">
+<img alt="Ardent Signature Reserve Coffee" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJQrOJ8YOULQ77rcYEOjMWFudaEZVeIRWnGakv3k__pVioLhtxTlbtiHiJWcFzNahuYJeHn7V3Bkc0AP4l0u1dPLlVgzmvNWpz81WoU9B06hefpBSryjKZZwUJ63cUzPfhy4L-JcOfgYJC9NZ2Jj2HCBx7DyWnIeJThYY6jJ_EYf_QYMbpPkifm9WXjk0NsFCJEyGq6tRGPkbnxAMCGzmTLDIloIzR7qCi1WORRD8Vvdhm1LMWoqJNsRrpWH2CXaTQrgSc1aU98A"/>
+</div>
+</div>
+<!-- Product Details -->
+<div class="lg:col-span-5 flex flex-col pt-4 lg:pt-8">
+<div class="flex items-center gap-3 mb-4">
+<span class="bg-tertiary-container text-on-tertiary-container font-caption text-caption px-3 py-1 rounded-full uppercase tracking-wider font-semibold">Signature</span>
+<span class="bg-surface-variant text-on-surface-variant font-caption text-caption px-3 py-1 rounded-full uppercase tracking-wider">Hot / Iced</span>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-4 text-balance">
+                    Ardent Signature Reserve
+                </h1>
+<p class="font-headline-md text-headline-md text-secondary mb-8">
+                    ₩ 6,500
+                </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed text-pretty">
+                    다크 초콜릿의 묵직한 바디감과 구운 헤이즐넛의 고소함, 그리고 끝에 기분 좋게 맴도는 야생 베리의 산뜻한 산미가 완벽한 밸런스를 이루는 아던트 하스의 시그니처 블렌드입니다. 매일 아침 정성껏 로스팅하여 신선함을 전달합니다.
+                </p>
+<!-- Flavor Notes Visualizer -->
+<div class="mb-10 p-6 bg-surface-container-low rounded-xl border border-outline-variant/50">
+<h3 class="font-label-md text-label-md text-primary mb-4 uppercase tracking-widest border-b border-outline-variant/30 pb-2">Tasting Notes</h3>
+<ul class="space-y-4">
+<li class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shadow-sm">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">cookie</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium">다크 초콜릿 (Dark Chocolate)</span>
+</li>
+<li class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium">구운 헤이즐넛 (Roasted Hazelnut)</span>
+</li>
+<li class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-error-container flex items-center justify-center text-on-error-container shadow-sm">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">nutrition</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium">야생 베리 (Wild Berry Acidity)</span>
+</li>
+</ul>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md py-4 rounded-full hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 shadow-md flex items-center justify-center gap-2 group">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">local_cafe</span>
+                    주문하기 (Order Now)
+                </button>
+</div>
+</section>
+<!-- Details & Pairing Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-section-gap">
+<!-- Nutrition Info -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant shadow-[0_4px_20px_rgba(75,54,33,0.05)]">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-secondary text-[28px]">info</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">영양 정보</h2>
+</div>
+<div class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/30">
+<span>제공량</span>
+<span class="font-medium text-on-surface">355ml (Tall)</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/30">
+<span>칼로리 (Kcal)</span>
+<span class="font-medium text-on-surface">15</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/30">
+<span>카페인 (mg)</span>
+<span class="font-medium text-on-surface">150</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/30">
+<span>당류 (g)</span>
+<span class="font-medium text-on-surface">0</span>
+</div>
+<div class="pt-2 text-caption font-caption text-outline">
+                        * 알레르기 유발 물질: 없음
+                    </div>
+</div>
+</div>
+<!-- Barista Pairing -->
+<div class="bg-secondary-fixed p-8 rounded-xl border border-secondary/20 shadow-[0_4px_20px_rgba(75,54,33,0.05)] relative overflow-hidden group cursor-pointer hover:shadow-md transition-shadow">
+<!-- Background decoration -->
+<div class="absolute -right-8 -top-8 w-40 h-40 bg-secondary/10 rounded-full blur-2xl group-hover:bg-secondary/20 transition-colors"></div>
+<div class="relative z-10 flex flex-col h-full justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary text-[20px]" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Barista's Pick</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-secondary-fixed mb-4">완벽한 페어링</h2>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">클래식 버터 크로와상</h3>
+<p class="font-body-md text-body-md text-on-secondary-fixed-variant leading-relaxed">
+                            프랑스산 고메 버터의 층층이 결이 살아있는 바삭한 크로와상입니다. 버터의 풍부한 풍미가 시그니처 리저브의 산미를 부드럽게 감싸주어 완벽한 아침을 완성합니다.
+                        </p>
+</div>
+<div class="mt-8 flex justify-between items-end">
+<span class="font-body-lg text-body-lg text-on-secondary-fixed font-semibold">+ ₩ 4,200</span>
+<a href="croissant.html" class="flex"><span class="material-symbols-outlined text-primary bg-surface p-2 rounded-full shadow-sm group-hover:scale-110 transition-transform">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline flat no shadows mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 gap-8">
+<!-- Copyright & Brand -->
+<div class="text-center md:text-left">
+<a href="index.html" class="flex items-center justify-center md:justify-start gap-2 text-primary dark:text-primary-fixed mb-2">
+    <span class="material-symbols-outlined text-[20px]">eco</span>
+    <span class="font-headline-sm italic">Ardent Hearth</span>
+</a>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface opacity-80">
+                    © 2024 Morning Dew Cafe. Steeped in serenity.
+                </p>
+</div>
+<!-- Links -->
+<ul class="flex flex-wrap justify-center gap-6 font-body-md text-body-md">
+<li>
+<a class="text-on-surface-variant hover:text-primary transition-all opacity-80 hover:opacity-100 transition-opacity" href="#">
+                        Privacy Policy
+                    </a>
+</li>
+<li>
+<a class="text-on-surface-variant hover:text-primary transition-all opacity-80 hover:opacity-100 transition-opacity" href="#">
+                        Terms of Service
+                    </a>
+</li>
+<li>
+<a class="text-on-surface-variant hover:text-primary transition-all opacity-80 hover:opacity-100 transition-opacity" href="#">
+                        Contact Us
+                    </a>
+</li>
+</ul>
+</div>
+</footer>
+</body></html>
